@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Schedule</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 3px double black;
+        }
+        .single-border {
+            border: 1px solid black;
+        }
+        .seminar-title {
+            font-weight: bold;
+            text-align: center;
+        }
+        .day-column {
+            border-right: 3px double black;
+        }
+        .no-left-border {
+            border-left: none;
+        }
+        .no-top-border {
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption class="seminar-title">Seminar</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" class="day-column">Day</th>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th class="single-border">Begin</th>
+                <th class="single-border">End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="day-column">Monday</td>
+                <td class="single-border">8:00 a.m.</td>
+                <td class="single-border">5:00 p.m.</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="no-left-border no-top-border"></td>
+                <td class="no-top-border">Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day-column">Tuesday</td>
+                <td class="single-border">8:00 a.m.</td>
+                <td class="single-border">11:00 a.m.</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td class="single-border">11:00 a.m.</td>
+                <td class="single-border">2:00 p.m.</td>
+            </tr>
+            <tr>
+                <td class="single-border">2:00 p.m.</td>
+                <td class="single-border">5:00 p.m.</td>
+                <td>XSL Transformations</td>
+            </tr>
+            <tr>
+                <td class="day-column">Wednesday</td>
+                <td class="single-border">8:00 a.m.</td>
+                <td class="single-border">12:00 p.m.</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
