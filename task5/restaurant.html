@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheshta’s Delights Restaurant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins bg-amber-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-amber-900 text-white py-4 px-6 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-playfair font-bold">Cheshta’s Delights</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-yellow-300 transition duration-300">Home</a></li>
+                <li><a href="#menu" class="hover:text-yellow-300 transition duration-300">Menu</a></li>
+                <li><a href="#chef" class="hover:text-yellow-300 transition duration-300">Our Chef</a></li>
+                <li><a href="#reservations" class="hover:text-yellow-300 transition duration-300">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-playfair font-bold mb-4">Welcome to Cheshta’s Delights</h1>
+            <p class="text-xl md:text-2xl mb-8">Experience culinary excellence in every bite</p>
+            <a href="#reservations" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">Reserve a Table</a>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-playfair font-bold text-center mb-12">Special Offers</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-amber-100 rounded-lg p-6 shadow-lg max-w-sm w-full">
+                    <h3 class="text-2xl font-bold mb-4">Weekend Brunch</h3>
+                    <p class="mb-4">Enjoy our exquisite brunch menu with a complimentary mimosa. Available every Saturday and Sunday from 10 AM to 2 PM.</p>
+                    <span class="text-yellow-600 font-semibold">20% off for early birds!</span>
+                </div>
+                <div class="bg-amber-100 rounded-lg p-6 shadow-lg max-w-sm w-full">
+                    <h3 class="text-2xl font-bold mb-4">Chef's Tasting Menu</h3>
+                    <p class="mb-4">Experience a 5-course tasting menu crafted by our award-winning chef. Available daily for dinner.</p>
+                    <span class="text-yellow-600 font-semibold">Complimentary pasta pairing on Wednesdays!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-playfair font-bold text-center mb-12">Our Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80" alt="Appetizers" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Appetizers</h3>
+                        <p class="text-gray-600">Start your culinary journey with our delectable appetizers.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80" alt="Main Courses" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Main Courses</h3>
+                        <p class="text-gray-600">Savor our chef's signature dishes and seasonal specialties.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="Desserts" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Desserts</h3>
+                        <p class="text-gray-600">Indulge in our heavenly desserts to complete your meal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Profile -->
+    <section id="chef" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-playfair font-bold text-center mb-12">Meet Our Chef</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=977&q=80" alt="Chef James Oliver" class="w-64 h-64 rounded-full object-cover mb-8 md:mb-0 md:mr-12 shadow-lg">
+                <div class="max-w-md text-center md:text-left">
+                    <h3 class="text-3xl font-bold mb-4">Chef James Oliver</h3>
+                    <p class="text-gray-600 mb-6">With over 20 years of culinary experience, Chef Maria brings passion and innovation to every dish. Her unique blend of traditional techniques and modern flavors has earned Cheshta’s Delights numerous accolades.</p>
+                    <q class="italic text-yellow-600">Cooking is an art that feeds both the body and the soul.</q>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations -->
+    <section id="reservations" class="py-16 bg-amber-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-playfair font-bold text-center mb-12">Make a Reservation</h2>
+            <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600" required>
+                </div>
+                <div class="mb-6">
+                    <label for="date" class="block text-gray-700 font-bold mb-2">Date</label>
+                    <input type="date" id="date" name="date" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600" required>
+                </div>
+                <div class="mb-6">
+                    <label for="time" class="block text-gray-700 font-bold mb-2">Time</label>
+                    <input type="time" id="time" name="time" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600" required>
+                </div>
+                <div class="mb-6">
+                    <label for="guests" class="block text-gray-700 font-bold mb-2">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600" required>
+                </div>
+                <button type="submit" class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="w-full md:w-1/3 text-center md:text-left mb-6 md:mb-0">
+                    <h3 class="text-2xl font-playfair font-bold mb-2">Cheshta’s Delights</h3>
+                    <p>123 Culinary Street, Foodie City, FC 12345</p>
+                </div>
+                <div class="w-full md:w-1/3 text-center mb-6 md:mb-0">
+                    <h4 class="text-xl font-bold mb-2">Hours</h4>
+                    <p>Monday - Friday: 11am - 10pm</p>
+                    <p>Saturday - Sunday: 10am - 11pm</p>
+                </div>
+                <div class="w-full md:w-1/3 text-center md:text-right">
+                    <h4 class="text-xl font-bold mb-2">Contact</h4>
+                    <p>Phone: 123-456-7890</p>
+                    <p>Email: info@cheshtadelights.com</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2024 Cheshta’s Delights. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
