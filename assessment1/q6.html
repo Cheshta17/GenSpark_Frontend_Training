@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Cards</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .music-card {
+            display: flex;
+            align-items: center;
+            background-color: #242424;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .music-card:hover {
+            background-color: #2a2a2a;
+        }
+
+        .music-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .music-card h2 {
+            color: white;
+            margin: 0;
+            padding-left: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-card">
+            <img src="https://static-cse.canva.com/blob/978202/1600w-YmFtIRl8-qo.jpg" alt="Liked Songs" />
+            <h2>Liked Songs</h2>
+        </div>
+        <div class="music-card">
+            <img src="https://cdn.musicvine.com/images/good-vibes-collection-cover-v2_5528980777329875.jpg" alt="Happy Vibes" />
+            <h2>Happy Vibes</h2>
+        </div>
+        <div class="music-card">
+            <img src="https://powermusic.in/folderthumb/924122782217-Arijit%20Singh%20Hindi%20Love%20New%20Style%20Humbing%202022%20-%20Dj%20SR%20Remix.jpg" alt="Arijit Singh Mix" />
+            <h2>Arijit Singh Mix</h2>
+        </div>
+        <div class="music-card">
+            <img src="https://i.scdn.co/image/ab67616d00001e028dce351c5e4a62c2ea2dd498" alt="Vaaste" />
+            <h2>Vaaste</h2>
+        </div>
+        <div class="music-card">
+            <img src="https://a10.gaanacdn.com/images/albums/93/3398093/crop_480x480_3398093.jpg" alt="The Carnival" />
+            <h2>The Carnival</h2>
+        </div>
+        <div class="music-card">
+            <img src="https://c.saavncdn.com/735/Sanam-Best-Is-Back-Hindi-2016-500x500.jpg" alt="This Is Sanam" />
+            <h2>This Is Sanam</h2>
+        </div>
+    </div>
+</body>
+
+</html>
