@@ -1,0 +1,117 @@
+/* Reset styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  
+  /* Main container styling */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+  }
+  
+  /* Color Picker Styling */
+  .color-picker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .color-picker div {
+    flex: 1 1 48%;
+    margin: 0.5rem;
+  }
+  
+  .adjust-colors div {
+    margin: 0.5rem 0;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #4685ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  
+  button:hover {
+    background-color: #357ab9;
+  }
+  
+  /* Color Options Styling */
+  .color-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .color-options button {
+    flex: 1 1 30%;
+  }
+  
+  /* Save Button Styling */
+  .save-btn {
+    margin-top: 1rem;
+    width: 50%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0.5rem;
+    }
+  
+    .color-picker div {
+      flex: 1 1 100%;
+    }
+  
+    .color-options button {
+      flex: 1 1 48%;
+    }
+  
+    .save-btn {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    button {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .color-options button {
+      flex: 1 1 100%;
+    }
+  }
+  
