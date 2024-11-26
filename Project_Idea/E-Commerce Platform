@@ -1,6 +1,6 @@
-#E-Commerce Platform
+# E-Commerce Platform
 
-##Project Description:
+## Project Description:
 
 This is a feature-rich, role-based e-commerce platform designed to simulate a real-world online shopping experience. The platform includes functionalities for browsing products, managing a shopping cart, and placing orders. It also features role-based access control, allowing specific actions for users, admins, and guests.
 
