@@ -1,0 +1,55 @@
+/* Pet.css */
+
+.pet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    width: 250px;
+    margin: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .pet-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pet-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .no-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    background-color: #ccc;
+    color: #555;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .pet-info {
+    text-align: center;
+  }
+  
+  .pet-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pet-animal,
+  .pet-breed {
+    font-size: 16px;
+    color: #666;
+  }
+  
