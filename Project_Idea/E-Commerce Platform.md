@@ -64,8 +64,6 @@ Admins can manage products, view orders, and access sales analytics, while users
 - Redux: Global state management for seamless data flow.
 - React Router: Navigation and routing between pages.
 - Tailwind CSS: Utility-first CSS framework for responsive design.
-- Backend Simulation:
-- Static JSON: For product and user data.
 - Mock APIs: Using json-server for simulating CRUD operations.
 
 
