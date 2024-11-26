@@ -36,6 +36,26 @@ Admins can manage products, view orders, and access sales analytics, while users
 
 ---
 
+### **Platform Features by Role**  
+
+| Feature                         | Guest         | User                  | Admin               |
+|---------------------------------|---------------|-----------------------|---------------------|
+| Browse Products                 | View Only     | View and Add to Cart  | View and Manage Listings |
+| View Product Details            | Read Only     | Read Only             | Read and Update     |
+| Add to Cart                     | Not Allowed   | Allowed               | Not Applicable      |
+| Checkout & Place Orders         | Not Allowed   | Allowed               | Not Applicable      |
+| View Order History              | Not Allowed   | View Personal Orders  | View All User Orders |
+| Update Profile Information      | Not Allowed   | Update Profile        | Not Applicable      |
+| Add New Products                | Not Applicable| Not Applicable        | Allowed             |
+| Edit Existing Products          | Not Applicable| Not Applicable        | Allowed             |
+| Delete Products                 | Not Applicable| Not Applicable        | Allowed             |
+| View All Orders                 | Not Applicable| Not Applicable        | Allowed             |
+| Access Sales Analytics          | Not Applicable| Not Applicable        | Access Sales Data   |
+| Role-Based Login                | Not Applicable| Login as User         | Login as Admin      |
+| Admin Dashboard Access          | Not Applicable| Not Applicable        | Full Access         |
+
+---
+
 ### **Technical Architecture Overview**  
 
 **Frontend:**  
