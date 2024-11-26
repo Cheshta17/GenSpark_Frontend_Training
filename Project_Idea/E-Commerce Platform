@@ -1,6 +1,0 @@
-# **This is a big and bold heading**
-
-
-This is a feature-rich, role-based e-commerce platform designed to simulate a real-world online shopping experience. The platform includes functionalities for browsing products, managing a shopping cart, and placing orders. It also features role-based access control, allowing specific actions for users, admins, and guests.
-
-Admins can manage products, view orders, and access sales analytics, while users can place orders, view their order history, and manage their profile. Guests can browse products but must log in or register to access advanced features like checkout.
