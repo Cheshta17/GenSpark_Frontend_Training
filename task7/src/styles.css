@@ -1,0 +1,30 @@
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #6200ea;
+  padding: 1rem;
+  color: white;
+}
+
+button {
+  margin: 0.5rem;
+}
+
+.dashboard {
+  padding: 2rem;
+}
+
+.login-container {
+  margin-top: 5rem;
+  text-align: center;
+}
