@@ -1,0 +1,95 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* App Container */
+div {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Layout Toggle Buttons */
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Input Styles */
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Photo Grid Container */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.photo-list {
+  display: block;
+}
+
+.photo-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.photo-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item img {
+  width: 100%;
+  display: block;
+}
+
+.photo-item p {
+  padding: 10px;
+  font-size: 14px;
+  margin: 0;
+  color: #666;
+  text-align: center;
+}
+
+/* Loading Indicator */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
