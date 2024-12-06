@@ -6,7 +6,7 @@ const AdminDashboard = () => {
     <div className="bg-gray-100 min-h-screen p-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
-          Admin Dashboard
+          Admin Dashboard 
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <Link
@@ -37,4 +37,3 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
-
