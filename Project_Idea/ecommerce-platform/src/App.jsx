@@ -25,11 +25,13 @@ import UpdateProfilePage from "./pages/UpdateProfilePage";
 import OrderHistoryPage from "./pages/OrderHistoryPage";
 import ManageProductsPage from "./pages/ManageProductsPage";
 import ViewOrdersPage from "./pages/ViewOrdersPage";
+import RegisterPage from "./pages/RegisterPage";
 import AdminAnalyticsPage from "./pages/AdminAnalyticsPage";
 
 // Layout Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import BackButton from "./components/BackButton"; // Back button component
 
 function App() {
   return (
@@ -42,12 +44,15 @@ function App() {
               {/* Public Routes */}
               <Route path="/" element={<HomePage />} />
               <Route path="/login" element={<LoginPage />} />
+              <Route path="/register" element={<RegisterPage />} />
               <Route path="/products" element={<ProductListPage />} />
               <Route path="/products/:id" element={<ProductDetailPage />} />
               <Route path="/unauthorized" element={<UnauthorizedPage />} />
 
               {/* Protected User Routes */}
-              <Route element={<ProtectedRoute allowedRoles={["user", "admin"]} />}>
+              <Route
+                element={<ProtectedRoute allowedRoles={["user", "admin"]} />}
+              >
                 <Route path="/dashboard" element={<UserDashboard />} />
                 <Route path="/cart" element={<CartPage />} />
                 <Route path="/checkout" element={<CheckoutPage />} />
