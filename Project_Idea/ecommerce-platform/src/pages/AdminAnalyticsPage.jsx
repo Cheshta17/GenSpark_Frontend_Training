@@ -1,4 +1,5 @@
 import React from "react";
+import BackButton from "../components/BackButton";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -51,7 +52,8 @@ const SalesAnalyticsPage = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="container mx-auto p-4">
+      <BackButton />
       <h1 className="text-2xl font-bold text-center mb-6">Sales Analytics</h1>
       <div className="chart-container mx-auto max-w-4xl">
         <Line data={salesData} options={salesOptions} />
