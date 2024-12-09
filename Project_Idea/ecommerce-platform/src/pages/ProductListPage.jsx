@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "../components/ProductCard";
+import BackButton from "../components/BackButton";
 
 const ProductListPage = () => {
   const [products, setProducts] = useState([]);
@@ -20,7 +21,8 @@ const ProductListPage = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen">
+      <div className="container mx-auto p-4">
+      <BackButton />
         <p className="text-xl">Loading products...</p>
       </div>
     );
