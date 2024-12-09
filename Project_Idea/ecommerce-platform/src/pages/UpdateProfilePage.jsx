@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BackButton from "../components/BackButton";
 
 const UpdateProfilePage = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +21,8 @@ const UpdateProfilePage = () => {
   };
 
   return (
+    <div className="container mx-auto p-4">
+      <BackButton />
     <div className="container mx-auto p-8">
       <h2 className="text-2xl font-bold mb-4">Update Profile</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -74,6 +77,7 @@ const UpdateProfilePage = () => {
           Update Profile
         </button>
       </form>
+    </div>
     </div>
   );
 };
