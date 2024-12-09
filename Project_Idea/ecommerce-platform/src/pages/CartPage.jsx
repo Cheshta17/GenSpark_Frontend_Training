@@ -6,6 +6,7 @@ import {
   clearCart 
 } from '../redux/cartSlice';
 import { useNavigate } from 'react-router-dom';
+import BackButton from "../components/BackButton";
 
 const CartPage = () => {
   const dispatch = useDispatch();
@@ -30,6 +31,7 @@ const CartPage = () => {
 
   return (
     <div className="container mx-auto p-4">
+      <BackButton />
       <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
       
       {items.length === 0 ? (
