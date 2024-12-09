@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BackButton from "../components/BackButton";
 
 const ManageProductsPage = () => {
   const [products, setProducts] = useState([
@@ -11,6 +12,8 @@ const ManageProductsPage = () => {
   };
 
   return (
+    <div className="container mx-auto p-4">
+      <BackButton />
     <div className="container mx-auto p-8">
       <h2 className="text-2xl font-bold mb-4">Manage Products</h2>
       <table className="w-full border">
@@ -42,6 +45,7 @@ const ManageProductsPage = () => {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   );
 };
