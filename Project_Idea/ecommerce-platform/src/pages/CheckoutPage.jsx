@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { clearCart } from "../redux/cartSlice";
+import BackButton from "../components/BackButton";
 
 const CheckoutPage = () => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -61,13 +62,16 @@ const CheckoutPage = () => {
 
   if (orderPlaced) {
     return (
+      <div className="container mx-auto p-4">
+      <BackButton />
       <div className="container mx-auto p-8 text-center">
         <h2 className="text-3xl font-bold text-green-600 mb-4">Thank You!</h2>
         <p className="text-xl">Your order has been successfully placed.</p>
         <p className="text-gray-600 mt-2">You will be redirected to the homepage shortly.</p>
       </div>
+      </div>
     );
-  }
+  } 
 
   return (
     <div className="container mx-auto p-8">
