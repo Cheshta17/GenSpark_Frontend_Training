@@ -1,4 +1,5 @@
 import React from "react";
+import BackButton from "../components/BackButton";
 
 const OrderHistoryPage = () => {
   const orders = [
@@ -8,7 +9,8 @@ const OrderHistoryPage = () => {
   ];
 
   return (
-    <div className="container mx-auto p-8">
+    <div className="container mx-auto p-4">
+      <BackButton />
       <h2 className="text-2xl font-bold mb-4">Order History</h2>
       <table className="w-full border">
         <thead>
