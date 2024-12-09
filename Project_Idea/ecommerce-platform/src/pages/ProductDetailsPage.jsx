@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
+import BackButton from "../components/BackButton";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
@@ -38,7 +39,8 @@ const ProductDetailsPage = () => {
   }
 
   return (
-    <div className="container mx-auto p-8">
+    <div className="container mx-auto p-4">
+      <BackButton />
       <div className="flex flex-col md:flex-row">
         <img
           src={product.image}
