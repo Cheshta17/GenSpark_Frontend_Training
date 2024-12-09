@@ -1,4 +1,5 @@
 import React from "react";
+import BackButton from "../components/BackButton";
 
 const ViewOrdersPage = () => {
   const orders = [
@@ -7,6 +8,8 @@ const ViewOrdersPage = () => {
   ];
 
   return (
+    <div className="container mx-auto p-4">
+      <BackButton />
     <div className="container mx-auto p-8">
       <h2 className="text-2xl font-bold mb-4">View Orders</h2>
       <table className="w-full border">
@@ -29,6 +32,7 @@ const ViewOrdersPage = () => {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   );
 };
