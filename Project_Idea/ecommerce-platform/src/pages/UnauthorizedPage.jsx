@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BackButton from "../components/BackButton";
 
 const UnauthorizedPage = () => {
   return (
+    <div className="container mx-auto p-4">
+      <BackButton />
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-red-600 mb-4">Unauthorized Access</h1>
@@ -24,6 +27,7 @@ const UnauthorizedPage = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };
