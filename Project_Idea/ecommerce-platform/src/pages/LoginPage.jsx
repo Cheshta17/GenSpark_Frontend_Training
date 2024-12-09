@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { login } from '../redux/authSlice';
+import BackButton from "../components/BackButton";
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -40,6 +41,8 @@ const LoginPage = () => {
   };
 
   return (
+    <div className="container mx-auto p-4">
+      <BackButton />
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded shadow-md w-96">
         <h2 className="text-2xl font-bold mb-4">Login</h2>
@@ -72,6 +75,7 @@ const LoginPage = () => {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };
